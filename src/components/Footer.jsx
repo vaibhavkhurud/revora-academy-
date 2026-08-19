@@ -89,8 +89,8 @@ const Footer = () => {
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
                 Revora Cinematic Academy<br />
                 123 Creative District,<br />
-                Film Nagar, Hyderabad,<br />
-                Telangana — 500033
+                Film Nagar, Pune,<br />
+                MH — 411001, India
               </p>
             </div>
             {/* Embedded Map */}

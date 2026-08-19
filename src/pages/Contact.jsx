@@ -49,8 +49,8 @@ const Contact = () => {
             <div style={{ flex: '1 1 300px' }}>
               <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>Contact Information</h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Email: hello@revoracinematic.com</p>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Phone: +1 (555) 123-4567</p>
-              <p style={{ color: 'var(--text-secondary)' }}>Location: Creative District, Metropolis</p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Phone: +91 8999407690</p>
+              <p style={{ color: 'var(--text-secondary)' }}>Location: Creative District, Pune</p>
             </div>
             
             <div style={{ flex: '2 1 500px', backgroundColor: 'var(--secondary-surface-color)', padding: '40px', borderRadius: 'var(--radius-lg)' }}>

@@ -1,0 +1,179 @@
+/* Page level CSS */
+
+.hero {
+  position: relative;
+  /* min-height: 80vh; */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: var(--spacing-section) 0;
+  background-color: var(--surface-color);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--brand-red);
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #f7f7f53b  40%, transparent 100%);
+  z-index: 2;
+}
+
+/* Inner Pages Hero */
+.inner-hero {
+  position: relative;
+  background-image: url('/breadcrumb.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff !important;
+}
+
+.inner-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.59); /* Dark overlay */
+  z-index: 1;
+}
+
+.inner-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.inner-hero .hero-title,
+.inner-hero .hero-desc,
+.inner-hero .section-subtitle,
+.inner-hero .breadcrumb-text {
+  color: #fff !important;
+}
+
+.inner-hero .eyebrow {
+  color: var(--brand-red);
+}
+
+/* Sections */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.bento-card {
+  background-color: var(--secondary-surface-color);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+}
+
+.bento-card.featured {
+  grid-column: span 2;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+    opacity: 0.2;
+  }
+  .hero-overlay {
+    background: linear-gradient(0deg, var(--surface-color) 0%, transparent 100%);
+  }
+  .bento-card.featured {
+    grid-column: span 1;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

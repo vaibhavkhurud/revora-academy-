@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Revora Cinematic Academy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} All rights reserved by revora academy | powered by <a href="https://www.sarvontech.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Sarvon Tech</a></p>
           <div style={{ display: 'flex', gap: '16px' }}>
             <Link to="/contact">Contact</Link>
             <Link to="/admissions">Admissions</Link>

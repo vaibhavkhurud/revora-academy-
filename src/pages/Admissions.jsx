@@ -26,7 +26,7 @@ const Admissions = () => {
       return;
     }
 
-    const wpNumber = '918999407690';
+    const wpNumber = '917276247633';
     
     const text = `*New Admission Enquiry*%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Mobile:* ${mobile}%0A*Course:* ${course}%0A*Message:* ${message}`;
     const whatsappUrl = `https://wa.me/${wpNumber}?text=${text}`;

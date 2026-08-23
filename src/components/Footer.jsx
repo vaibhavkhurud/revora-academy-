@@ -21,14 +21,16 @@ const Footer = () => {
             {/* Social Icons */}
             <div style={{ display: 'flex', gap: '12px' }}>
               {[
-                { icon: <FaInstagram size={18} />, href: '#', label: 'Instagram' },
+                { icon: <FaInstagram size={18} />, href: 'https://www.instagram.com/revora.academy?igsi=cm9qOTd3dm92aHNu', label: 'Instagram' },
                 { icon: <FaYoutube size={18} />, href: '#', label: 'YouTube' },
                 { icon: <FaFacebook size={18} />, href: '#', label: 'Facebook' },
-                { icon: <FaWhatsapp size={18} />, href: '#', label: 'WhatsApp' },
+                { icon: <FaWhatsapp size={18} />, href: `https://wa.me/917276247633?text=${encodeURIComponent('Hello Revora Cinematic Academy, I would like to make an enquiry.')}`, label: 'WhatsApp', target: '_blank' },
               ].map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
+                  target={s.target || '_self'}
+                  rel={s.target === '_blank' ? 'noopener noreferrer' : undefined}
                   aria-label={s.label}
                   style={{
                     display: 'flex',

@@ -26,7 +26,7 @@ const Contact = () => {
       return;
     }
 
-    const wpNumber = '918999407690';
+    const wpNumber = '917276247633';
     
     const text = `*New Contact Enquiry*%0A%0A*Name:* ${fullName}%0A*Email:* ${email}%0A*Mobile:* ${mobile}%0A*Course:* ${course}%0A*Message:* ${message}`;
     const whatsappUrl = `https://wa.me/${wpNumber}?text=${text}`;
@@ -49,7 +49,7 @@ const Contact = () => {
             <div style={{ flex: '1 1 300px' }}>
               <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>Contact Information</h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Email: hello@revoracinematic.com</p>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Phone: +91 8999407690</p>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>Phone: +91 7276247633</p>
               <p style={{ color: 'var(--text-secondary)' }}>Location: Creative District, Pune</p>
             </div>
             

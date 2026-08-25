@@ -33,7 +33,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="section" style={{ backgroundColor: 'var(--bg-color)' }}>
+      {/* <section className="section" style={{ backgroundColor: 'var(--bg-color)' }}>
         <div className="container">
           <div className="stats-grid">
             <div>
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
             {/* Featured Courses Section */}
       <section className="section" style={{ backgroundColor: 'var(--bg-color)' }}>
